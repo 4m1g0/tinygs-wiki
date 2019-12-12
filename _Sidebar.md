@@ -1,1 +1,2 @@
-Getting started
+* Getting started
+* FAQ
