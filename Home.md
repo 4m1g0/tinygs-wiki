@@ -1,4 +1,4 @@
-Welcome to the ESP32-OLED-Fossa-GroundStation wiki!
+### Welcome to the ESP32-OLED-Fossa-GroundStation wiki!
 
 The aim of this project is to create an open network of ground stations for the Fossa Satellites distributed all over the world and connected through internet.
 
