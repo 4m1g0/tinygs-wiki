@@ -1,4 +1,3 @@
-# OTA Update
 This project implements OTA updates with both Arduino IDE and Platformio. To use this flashing method the board and the computer have to be connected to the same network and be visible to each other.
 
 ## Platformio
