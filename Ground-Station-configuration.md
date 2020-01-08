@@ -3,8 +3,8 @@ The Ground Station firmware provides a web panel for board configuration. This m
 The first time the board boot it will generate an AP with the name: FossaGroundStation. Once connected to that network you should be prompted with a web panel to configure the basic parameters of your station. If that were not the case, you can access the web panel using a web browser and going to the url 192.168.4.1.
 
 <p float="left" align="center">
-  <img src="/doc/images/config_ap.jpg" width="400" />
-  <img src="/doc/images/config_wifimanager.jpg" width="400" /> 
+  <img src="images/config_ap.jpg" width="400" />
+  <img src="images/config_wifimanager.jpg" width="400" /> 
 </p>
 
 The parameters that must be filled are the following:
@@ -21,6 +21,8 @@ The parameters that must be filled are the following:
 ### HELTEC WiFi LoRA 32 V1
 This is the stock Heltec v1 LoRa board, it should be detected automatically and be selected by default if you have this board. 
 
+![](images/boards/heltec_lora_32_v1.jpg)
+
 ### HELTEC WiFi LoRA 32 V2
 This is the version 2 of the Heltec LoRa board, if you have this board, probably it is not detected automatically and you have to select it on the confi panel manually. If you don't do so the Lora communication will not work.
 
@@ -33,5 +35,10 @@ This is the version 2 of the TTGO LoRa board, if you have this board, probably i
 ### T-BEAM + OLED
 Warning this board is supposed to work with this configuration but it will not be automatically detected and it's not properly tested yet. If you have this board we would like to hear your experience.
 
-### T-BEAM + OLED
-Custom ESP32 Wroom + SX126x (Crystal)
+### Custom ESP32 Wroom + SX126x (Crystal)
+
+### TTGO LoRa 32 V2 Modified with module SX126x (crystal)
+
+### Custom ESP32 Wroom + SX126x DRF1268T (TCXO) (5, 2, 26, 13)
+
+### Custom ESP32 Wroom + SX126x DRF1268T (TCXO) (5, 26, 14, 12)
