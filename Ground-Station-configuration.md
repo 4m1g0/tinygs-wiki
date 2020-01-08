@@ -112,3 +112,11 @@ Pin definition for this board is the following:
 | Lora_MISO | 19 |
 | Lora_MOSI | 23 |
 | Lora_SCK | 18 |
+
+# Adding a custom board to the system
+If you are planning to build your custom board, we recommend using one of the existant pin congigurations. In case you already have a board with a different configuration and is not possible to change, you can add your own pin configuration. To do so you can follow the example show in this commit: https://github.com/G4lile0/ESP32-OLED-Fossa-GroundStation/commit/d1f280fba51e214ca8b717e6b36ed69d5d22f68a
+
+These are the steps:
+* In `FossaGroundStation/src/ConfigManager/ConfigManager.cpp` add a new line to the `boards` variable with your pin definitions.
+* In `FossaGroundStation/src/ConfigManager/ConfigManager.h` add a new line before `NUM_BOARDS` to the `boardNum` enum variable.
+* In `FossaGroundStation/src/ConfigManager/htmlOptions.h` add the propiate option to the select field of the HTML so it appears on the web panel. The board number is it's position on the boards variable you edited before starting at 0.
