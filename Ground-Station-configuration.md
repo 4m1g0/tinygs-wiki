@@ -21,24 +21,94 @@ The parameters that must be filled are the following:
 ### HELTEC WiFi LoRA 32 V1
 This is the stock Heltec v1 LoRa board, it should be detected automatically and be selected by default if you have this board. 
 
-![](images/boards/heltec_lora_32_v1.jpg |200)
+![](images/boards/heltec_lora_32_v1.jpg)
 
 ### HELTEC WiFi LoRA 32 V2
 This is the version 2 of the Heltec LoRa board, if you have this board, probably it is not detected automatically and you have to select it on the confi panel manually. If you don't do so the Lora communication will not work.
 
+![](images/boards/heltec_lora_32_v2.jpg)
+
 ### TTGO LoRa 32 v1
 This is the first version of the TTGO LoRa board,it should be detected automatically and be selected by default if you have this board. 
+
+
 
 ### TTGO LoRA 32 v2
 This is the version 2 of the TTGO LoRa board, if you have this board, probably it is not detected automatically and you have to select it on the confi panel manually. If you don't do so the Lora communication will not work.
 
+![](images/boards/ttgo_v2.jpg)
+
 ### T-BEAM + OLED
 Warning this board is supposed to work with this configuration but it will not be automatically detected and it's not properly tested yet. If you have this board we would like to hear your experience.
 
+_IMAGE NEEDED_
+
 ### Custom ESP32 Wroom + SX126x (Crystal)
+This is a custom made ground station with a SX1268 module provided with a crystal oscillator (no TCXO). It is set up on a breadboard although a soldered protoboard is highly recommended if you decide to go for this type of setup. The OLED display is optional but also recommended.
+
+Pin definition for this board is the following:
+
+| Name   | GPIO  |
+| ------- | ---- |
+| OLED_SDA | 21  |
+| OLED_SCL | 22 |
+| OLED_RST | 16 |
+| PROG_BUTTON | 0 |
+| BOARD_LED | 25 |
+| Lora_NSS | 5 |
+| Lora_DI01 | 27 |
+| Lora_BUSSY | 26 |
+| Lora_RST | 14 |
+| Lora_MISO | 19 |
+| Lora_MOSI | 23 |
+| Lora_SCK | 18 |
+
+![](custom_esp32_sx1268_crystal.jpg)
 
 ### TTGO LoRa 32 V2 Modified with module SX126x (crystal)
+The TTGO V2 board comes with a soldered module on board. This means that, with a little patience, the appropriate tools and some expertise, it's possible to desolder the original SX127X lora module and solder a SX126X. This configuration is meant to use a SX126X with a crystal oscillator (no TCXO).
+
+It's also needed to use jumper cables to connect LoRa pins DIO1 to GPIO 33 and BUSSY to GPIO 32 which are not connected on the TTGO V2 but exposed as pins.
+
+![](images/boards/ttgo_v2.jpg)
 
 ### Custom ESP32 Wroom + SX126x DRF1268T (TCXO) (5, 2, 26, 13)
 
+This is a custom made ground station with a SX1268 module provided with a TCXO. A soldered protoboard is highly recommended instead of a breadboard if you decide to go for this type of setup. The OLED display is optional but also recommended.
+
+Pin definition for this board is the following:
+
+| Name   | GPIO  |
+| ------- | ---- |
+| OLED_SDA | 21  |
+| OLED_SCL | 22 |
+| OLED_RST | 16 |
+| PROG_BUTTON | 0 |
+| BOARD_LED | 25 |
+| Lora_NSS | 5 |
+| Lora_DI01 | 2 |
+| Lora_BUSSY | 13 |
+| Lora_RST | 26 |
+| Lora_MISO | 19 |
+| Lora_MOSI | 23 |
+| Lora_SCK | 18 |
+
 ### Custom ESP32 Wroom + SX126x DRF1268T (TCXO) (5, 26, 14, 12)
+This is the is the same custom board as the previous one but with different GPIO arrangement. Both are kept for compatibility reasons.
+
+Pin definition for this board is the following:
+
+| Name   | GPIO  |
+| ------- | ---- |
+| OLED_SDA | 21  |
+| OLED_SCL | 22 |
+| OLED_RST | 16 |
+| PROG_BUTTON | 0 |
+| BOARD_LED | 25 |
+| Lora_NSS | 5 |
+| Lora_DI01 | 26 |
+| Lora_BUSSY | 12 |
+| Lora_RST | 14 |
+| Lora_MISO | 19 |
+| Lora_MOSI | 23 |
+| Lora_SCK | 18 |
