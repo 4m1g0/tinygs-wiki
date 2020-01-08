@@ -1,5 +1,5 @@
 ## Build on Arduino IDE
-We strongly recommend using platformio, the build process is simpler and it is less likely to have compilation errors.
+We strongly recommend using platformio, the build process is simpler and it is less likely to have compilation errors. https://github.com/G4lile0/ESP32-OLED-Fossa-GroundStation/wiki/Platformio
 
 You can install the Arduino IDE by downloading it from [arduino.cc](https://www.arduino.cc/en/Main/Software), we recommend the last version, but you should use v1.6 or above.
 
