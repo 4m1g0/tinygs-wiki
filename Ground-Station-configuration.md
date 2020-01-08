@@ -63,7 +63,7 @@ Pin definition for this board is the following:
 | Lora_MOSI | 23 |
 | Lora_SCK | 18 |
 
-![](images/custom_esp32_sx1268_crystal.jpg)
+![](images/boards/custom_esp32_sx1268_crystal.jpg)
 
 ### TTGO LoRa 32 V2 Modified with module SX126x (crystal)
 The TTGO V2 board comes with a soldered module on board. This means that, with a little patience, the appropriate tools and some expertise, it's possible to desolder the original SX127X lora module and solder a SX126X. This configuration is meant to use a SX126X with a crystal oscillator (no TCXO).
