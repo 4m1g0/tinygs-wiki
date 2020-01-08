@@ -1,4 +1,5 @@
 **Getting started**
+* [Home](https://github.com/G4lile0/ESP32-OLED-Fossa-GroundStation/wiki)
 * [Platformio (recommended)](https://github.com/G4lile0/ESP32-OLED-Fossa-GroundStation/wiki/Platformio)
 * [Arduino IDE](https://github.com/G4lile0/ESP32-OLED-Fossa-GroundStation/wiki/Arduino-IDE)
 
