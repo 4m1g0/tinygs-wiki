@@ -3,8 +3,8 @@ The Ground Station firmware provides a web panel for board configuration. This m
 The first time the board boot it will generate an AP with the name: FossaGroundStation. Once connected to that network you should be prompted with a web panel to configure the basic parameters of your station. If that were not the case, you can access the web panel using a web browser and going to the url 192.168.4.1.
 
 <p float="left" align="center">
-  <img src="images/config_ap.jpg" width="400" />
-  <img src="images/config_wifimanager.jpg" width="400" /> 
+  <img src="images/config_ap.jpg" width="300" />
+  <img src="images/config_wifimanager.jpg" width="270" /> 
 </p>
 
 The parameters that must be filled are the following:
