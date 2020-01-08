@@ -31,7 +31,7 @@ This is the version 2 of the Heltec LoRa board, if you have this board, probably
 ### TTGO LoRa 32 v1
 This is the first version of the TTGO LoRa board,it should be detected automatically and be selected by default if you have this board. 
 
-
+![](images/boards/ttgo_v1.jpg)
 
 ### TTGO LoRA 32 v2
 This is the version 2 of the TTGO LoRa board, if you have this board, probably it is not detected automatically and you have to select it on the confi panel manually. If you don't do so the Lora communication will not work.
@@ -41,7 +41,7 @@ This is the version 2 of the TTGO LoRa board, if you have this board, probably i
 ### T-BEAM + OLED
 Warning this board is supposed to work with this configuration but it will not be automatically detected and it's not properly tested yet. If you have this board we would like to hear your experience.
 
-_IMAGE NEEDED_
+![](images/boards/ttgo_tbeam.jpg)
 
 ### Custom ESP32 Wroom + SX126x (Crystal)
 This is a custom made ground station with a SX1268 module provided with a crystal oscillator (no TCXO). It is set up on a breadboard although a soldered protoboard is highly recommended if you decide to go for this type of setup. The OLED display is optional but also recommended.
