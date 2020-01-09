@@ -94,7 +94,7 @@ Pin definition for this board is the following:
 | Lora_SCK | 18 |
 
 ### Custom ESP32 Wroom + SX126x DRF1268T (TCXO) (5, 26, 14, 12)
-This is the is the same custom board as the previous one but with different GPIO arrangement. Both are kept for compatibility reasons.
+This is the same custom board as the previous one but with different GPIO arrangement. Both are kept for compatibility reasons.
 
 Pin definition for this board is the following:
 
@@ -114,7 +114,7 @@ Pin definition for this board is the following:
 | Lora_SCK | 18 |
 
 # Adding a custom board to the system
-If you are planning to build your custom board, we recommend using one of the existant pin congigurations. In case you already have a board with a different configuration and is not possible to change, you can add your own pin configuration. To do so you can follow the example show in this commit: https://github.com/G4lile0/ESP32-OLED-Fossa-GroundStation/commit/d1f280fba51e214ca8b717e6b36ed69d5d22f68a
+If you are planning to build your custom board, we recommend using one of the existant pin congigurations. In case you already have a board with a different configuration and is not possible to change, you can add your own pin configuration. To do so you can follow the example shown in this commit: https://github.com/G4lile0/ESP32-OLED-Fossa-GroundStation/commit/d1f280fba51e214ca8b717e6b36ed69d5d22f68a
 
 These are the steps:
 * In `FossaGroundStation/src/ConfigManager/ConfigManager.cpp` add a new line to the `boards` variable with your pin definitions.
