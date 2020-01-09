@@ -21,7 +21,7 @@ To install the libraries you can simply copy all files from the GroundStation fo
 * **ArduinoJson** (recomended v6.13.0 **Required** >v6.0) https://github.com/bblanchon/ArduinoJson
 * **ESP8266_SSD1306** (recomended v4.1.0) https://github.com/ThingPulse/esp8266-oled-ssd1306
 * **IoTWebConf2** (**Required:** 2.3.0@4m1g0) https://github.com/4m1g0/IotWebConf2
-* **PubSubCluent (with modifications)** (recomended 2.7) https://github.com/knolleary/pubsubclient
+* **PubSubClient (with modifications)** (recomended 2.7) https://github.com/knolleary/pubsubclient
 
 **Note**: Some of this libraries have modifications compared to the original ones, so make sure you use the version listed here or just copy the libraries from the `lib`folder to avoid problems. On PubSubClient it is mandatory to set `MQTT_MAX_PACKET_SIZE` to 1000 on the `PubSubClient.h` file.
 
