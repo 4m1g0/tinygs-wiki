@@ -34,7 +34,7 @@ This is the first version of the TTGO LoRa board,it should be detected automatic
 ![](images/boards/ttgo_v1.jpg)
 
 ### TTGO LoRA 32 v2
-This is the version 2 of the TTGO LoRa board, if you have this board, probably it is not detected automatically and you have to select it on the confi panel manually. If you don't do so the Lora communication will not work.
+This is the version 2 of the TTGO LoRa board, if you have this board, probably it is not detected automatically and you have to select it on the config panel manually. If you don't do so the Lora communication will not work.
 
 ![](images/boards/ttgo_v2.jpg)
 
