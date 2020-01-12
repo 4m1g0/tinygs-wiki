@@ -24,7 +24,7 @@ This is the stock Heltec v1 LoRa board, it should be detected automatically and 
 ![](images/boards/heltec_lora_32_v1.jpg)
 
 ### HELTEC WiFi LoRA 32 V2
-This is the version 2 of the Heltec LoRa board, if you have this board, probably it is not detected automatically and you have to select it on the confi panel manually. If you don't do so the Lora communication will not work.
+This is the version 2 of the Heltec LoRa board, if you have this board, probably it is not detected automatically and you have to select it on the config panel manually. If you don't do so the Lora communication will not work.
 
 ![](images/boards/heltec_lora_32_v2.jpg)
 
