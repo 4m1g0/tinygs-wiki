@@ -12,3 +12,6 @@ Welcome! First, make sure you read the [Status of the project section](https://g
 
 * **I have a LoRa Board with frequency 868 or 915 MHz can I use it**
 FossaSat-1 transmits on 436.7 Mhz so you need a 433MHz board to be able to communicate with it. Other frequencies wont make the firmware fail but you will probably not be able to receive anything from the satellite.
+
+* **MQTT connection failed with error: failed, rc=-2**
+The ground station could not connect to the MQTT server, check your connection and make sure there is nothing blocking the connection such as a firewall or content blocker. It has been reported some problems with [pihole](https://pi-hole.net/). Adding an exception should solve the problem.
