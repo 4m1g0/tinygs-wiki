@@ -22,7 +22,7 @@ The parameters that must be filled are the following:
 * **Telemetry to third party:** Some of the satellite operatos, usually universities, have asked us to send the data received by the network so they have more data to study. If you disable this option, no data will be sent to third parties.
 * **Test Mode:** This option sets your station in test mode. All the packets will be marked as test. Use this option if you are making tests for example retransmitting old packets so that the data does not count as actual data.
 * **Test Mode:** This option enables or disables automatic firmware updates. We recommend to leave it always enabled so your board receives always the lastest updates.
-* **Board template:** This field provides an easy way to configure any type of board with custom pinout. Learn more about [Board Templates here](https://github.com/G4lile0/tinyGS/wiki/Ground-Station-configuration).
+* **Board template:** This field provides an easy way to configure any type of board with custom pinout. Learn more about [Board Templates here](https://github.com/G4lile0/tinyGS/wiki/Board-templates).
 * **Modem startup:** This option contains the initial radio configuration for the board, this will be changed by the server but it's useful to keep the config after rebooting and to allow ofline operation.
 * **Avanced parameters:** This option provides a set of advanced parameters mostly for developing and debugging tasks.
 
@@ -123,9 +123,6 @@ Pin definition for this board is the following:
 | Lora_SCK | 18 |
 
 # Adding a custom board to the system
-If you are planning to build your custom board, we recommend using one of the existant pin congigurations. In case you already have a board with a different configuration and is not possible to change, you can add your own pin configuration. To do so you can follow the example shown in this commit: https://github.com/G4lile0/ESP32-OLED-Fossa-GroundStation/commit/d1f280fba51e214ca8b717e6b36ed69d5d22f68a
+If you are planning to build your custom board, we recommend using one of the existant pin configurations. In case you already have a board with a different configuration and is not possible to change, you can add your own pin configuration using a [Board Template.](https://github.com/G4lile0/tinyGS/wiki/Board-templates)
 
-These are the steps:
-* In `FossaGroundStation/src/ConfigManager/ConfigManager.cpp` add a new line to the `boards` variable with your pin definitions.
-* In `FossaGroundStation/src/ConfigManager/ConfigManager.h` add a new line before `NUM_BOARDS` to the `boardNum` enum variable.
-* In `FossaGroundStation/src/ConfigManager/htmlOptions.h` add the propiate option to the select field of the HTML so it appears on the web panel. The board number is it's position on the boards variable you edited before starting at 0.
+We don't recommend to modify the code and instead use a board template so your configuration will be persisted after a software update. You can find more information about how to use your custom Board Template here: https://github.com/G4lile0/tinyGS/wiki/Board-templates
