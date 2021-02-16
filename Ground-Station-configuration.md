@@ -1,6 +1,6 @@
-The Ground Station firmware provides a web panel for board configuration. This makes it easy to review the state of the ground station, change any parameter and even upload a new firmware remotely. Also it ensures that configuration is kept after a new firmware version is uploaded.
+The TinyGS firmware provides a web panel for board configuration. This makes it easy to review the state of the ground station, change any parameter and even upload a new firmware remotely. Also it ensures that configuration is kept after a new firmware version is uploaded.
 
-The first time the board boot it will generate an AP with the name: FossaGroundStation. Once connected to that network you should be prompted with a web panel to configure the basic parameters of your station. If that were not the case, you can access the web panel using a web browser and going to the url 192.168.4.1.
+The first time the board boot it will generate an AP with the name: My TinyGS. Once connected to that network you should be prompted with a web panel to configure the basic parameters of your station. If that were not the case, you can access the web panel using a web browser and going to the url `192.168.4.1`.
 
 <p float="left" align="center">
   <img src="images/config_ap.jpg" width="300" />
@@ -8,14 +8,23 @@ The first time the board boot it will generate an AP with the name: FossaGroundS
 </p>
 
 The parameters that must be filled are the following:
-* **GROUNDSTATION NAME:** The name of your ground station. If you have registered yours in the [Fossa Ground Station Database](http://groundstationdatabase.com/database.php), the name should match. All ground stations starting with `test_` will be considered stations in test mode and all messages from those gs will be published on the [TEST telegram channel](https://t.me/FOSSASAT_TEST) in order not to flood the main channel with test packaged. Make sure you use a name stating with `test_` for example if you are going to test you gs with a satellite emulator.
+* **GROUNDSTATION NAME:** The name of your ground station. You can use any name you want try to choose a name that is unique.
  **GROUNDSTATION PASSWORD:** This is the password of your ground station, you will be asked for this password next time you connect to it through the web panel. **The user is always `admin`**
 * **SSID and PASSWORD:** The configuration parameters of you home WiFi AP so that the ground station can connect to internet.
 * **TIME ZONE:** Your timezone, this is to show you the time imformation in your timezone.
-* **LATITUDE and LONGITUDE:** The geographical coordinates of the ground station. This serves the purpose of locating your ground station when you receive a package from the satellite.
+* **LATITUDE and LONGITUDE:** The geographical coordinates of the ground station. This serves the purpose of locating your ground station when you receive a package from the satellite. You can see all the stations on the [TinyGS.com website](https://tinygs.com/).
 * **MQTT_SERVER and MQTT_PORT:** These are the address and port of the MQTT server of the project you should not change them if you want the Ground Station to be able to connect the main server. 
-* **MQTT_USER and MQTT_PASS:** These are the credentials of the project MQTT server, the purpose is to be able to collect the most packets from the satellite and manage all groundStations from this central server. You can ask for user and password in this telegram group: https://t.me/joinchat/DmYSElZahiJGwHX6jCzB3Q
+* **MQTT_USER and MQTT_PASS:** These are the credentials of the project MQTT server, the purpose is to be able to collect the most packets from the satellite and manage all groundStations from this central server. You can ask for user and password in this Telegram group: https://t.me/joinchat/DmYSElZahiJGwHX6jCzB3Q
 * **BOARD TYPE:** The hardware board you are using. The firmware is able to autodetect your board but, in case the selection is wrong or you know what you are doing, you can change it manually by modifying this parameter.
+* **OLED Bright:** Controls the brightness of the oled you can configure it acording to your taste. It is recommended to set a value lower than 100 to extend the life of the OLED.
+* **Enable TX:** This parameter enables or disables the TX function. In some of the frequencies used by satellites only licensed radio operators can transmit. The station will never transmit without your intervention but if you don't have a license we recomend to disable this option to avoid triggering a tx by mistake.
+* **Automatic tunning:** (Experimental) If this option is activated, the system will try to get the prediction from the satellites and set the radio parameters automatically to maximize the options of receiving a satellite.
+* **Telemetry to third party:** Some of the satellite operatos, usually universities, have asked us to send the data received by the network so they have more data to study. If you disable this option, no data will be sent to third parties.
+* **Test Mode:** This option sets your station in test mode. All the packets will be marked as test. Use this option if you are making tests for example retransmitting old packets so that the data does not count as actual data.
+* **Test Mode:** This option enables or disables automatic firmware updates. We recommend to leave it always enabled so your board receives always the lastest updates.
+* **Board template:** This field provides an easy way to configure any type of board with custom pinout. Learn more about [Board Templates here](https://github.com/G4lile0/tinyGS/wiki/Board-templates).
+* **Modem startup:** This option contains the initial radio configuration for the board, this will be changed by the server but it's useful to keep the config after rebooting and to allow ofline operation.
+* **Avanced parameters:** This option provides a set of advanced parameters mostly for developing and debugging tasks.
 
 ## Current available boards
 ### HELTEC WiFi LoRA 32 V1
@@ -114,9 +123,6 @@ Pin definition for this board is the following:
 | Lora_SCK | 18 |
 
 # Adding a custom board to the system
-If you are planning to build your custom board, we recommend using one of the existant pin congigurations. In case you already have a board with a different configuration and is not possible to change, you can add your own pin configuration. To do so you can follow the example shown in this commit: https://github.com/G4lile0/ESP32-OLED-Fossa-GroundStation/commit/d1f280fba51e214ca8b717e6b36ed69d5d22f68a
+If you are planning to build your custom board, we recommend using one of the existant pin configurations. In case you already have a board with a different configuration and is not possible to change, you can add your own pin configuration using a [Board Template.](https://github.com/G4lile0/tinyGS/wiki/Board-templates)
 
-These are the steps:
-* In `FossaGroundStation/src/ConfigManager/ConfigManager.cpp` add a new line to the `boards` variable with your pin definitions.
-* In `FossaGroundStation/src/ConfigManager/ConfigManager.h` add a new line before `NUM_BOARDS` to the `boardNum` enum variable.
-* In `FossaGroundStation/src/ConfigManager/htmlOptions.h` add the propiate option to the select field of the HTML so it appears on the web panel. The board number is it's position on the boards variable you edited before starting at 0.
+We don't recommend to modify the code and instead use a board template so your configuration will be persisted after a software update. You can find more information about how to use your custom Board Template here: https://github.com/G4lile0/tinyGS/wiki/Board-templates
