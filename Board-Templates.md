@@ -44,4 +44,4 @@ Here you can see some examples of templates:
 ### TTGO LoRA 32 v2
 ´´´
 {"name":"[433] TTGO LoRA 32 v2","aADDR":60,"oSDA":21,"oSCL":22,"oRST":16,"pBut":0,"led":22,"radio":1,"lNSS":18,"lDIO0":26,"lDIO1":33,"lBUSSY":0,"lRST":14,"lMISO":19,"lMOSI":27,"lSCK":5,"lTCXOV":0.0}
-´´´
+```
