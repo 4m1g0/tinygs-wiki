@@ -8,6 +8,11 @@
 * [Board Templates](https://github.com/G4lile0/tinyGS/wiki/Board-Templates)
 * [OTA Update](https://github.com/G4lile0/ESP32-OLED-Fossa-GroundStation/wiki/OTA-Update)
 
+**Web application**
+* Main Overview
+* Packets
+* User private dashboard
+
 **Other**
 * [Troubleshooting](https://github.com/G4lile0/ESP32-OLED-Fossa-GroundStation/wiki/Troubleshooting)
 
