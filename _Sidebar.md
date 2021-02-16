@@ -16,4 +16,5 @@
 
 **Other**
 * [Troubleshooting](https://github.com/G4lile0/ESP32-OLED-Fossa-GroundStation/wiki/Troubleshooting)
+* [Programmatic API](https://github.com/G4lile0/tinyGS/wiki/Programmatic-API)
 
