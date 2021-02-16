@@ -12,7 +12,7 @@ Once you have cloned this project to a local directory, you can open it on Visua
 
 ![Add folder to workspace VSCode](images/add_folder_to_workspace.png "Add folder to workspace VSCode")
 
-Then select the `ESP32-OLED-Fossa-GroundStation` folder of the repository and click open, make sure it is the root folder and that it has the platformio.ino inside.
+Then select the `TinyGS` folder of the repository and click open, make sure it is the root folder and that it has the platformio.ino inside.
 
 ![Select folder](images/Select_folder.png "Select folder")
 
