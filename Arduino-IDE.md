@@ -17,13 +17,15 @@ This project relies on several third party dependencies that must be installed i
 
 To install the libraries you can simply copy all files from the GroundStation folder `lib` into your sketchbook\libraries folder. Make sure there are no duplicate libraries that might cause a conflict.
 
-* **RadioLib (with modifications)** (**required:** v3.0.0@4m1g0) https://github.com/4m1g0/RadioLib
-* **ArduinoJson** (recomended v6.13.0 **Required** >v6.0) https://github.com/bblanchon/ArduinoJson
-* **ESP8266_SSD1306** (recomended v4.1.0) https://github.com/ThingPulse/esp8266-oled-ssd1306
-* **IoTWebConf2** (**Required:** 2.3.0@4m1g0) https://github.com/4m1g0/IotWebConf2
-* **PubSubClient (with modifications)** (recomended 2.7) https://github.com/knolleary/pubsubclient
+* **RadioLib (with modifications)** (**required:** v4.2.0@G4lile0) https://github.com/G4lile0/RadioLib
+* **ArduinoJson** (recomended v6.17.2 **Required** >v6.0) https://github.com/bblanchon/ArduinoJson
+* **ESP8266_SSD1306** (recomended v4.2.0) https://github.com/ThingPulse/esp8266-oled-ssd1306
+* **IoTWebConf2** (**Required:** 3.0.0@4m1g0) https://github.com/4m1g0/IotWebConf2
+* **PubSubClient** (recomended 2.8) https://github.com/knolleary/pubsubclient
+* **ESPNtpClient** (recomended 0.2.3) https://github.com/gmag11/ESPNtpClient
+* **FailSafeMode** (recommended 0.2.2) https://github.com/gmag11/FailSafeMode
 
-**Note**: Some of this libraries have modifications compared to the original ones, so make sure you use the version listed here or just copy the libraries from the `lib`folder to avoid problems. On PubSubClient it is mandatory to set `MQTT_MAX_PACKET_SIZE` to 1000 on the `PubSubClient.h` file.
+**Note**: Radiolib have modifications compared to the original one, so make sure you use the version listed here or just copy the libraries from the `lib`folder to avoid problems. 
 
 ### Open the project in Arduino IDE
 Once you have cloned this project to a local directory, you can open it from the Arduino IDE in `File > Add folder` to workspace. And select the .ino file which is located in `FossaGroundStation > Fossa_GroundStation.ino`
