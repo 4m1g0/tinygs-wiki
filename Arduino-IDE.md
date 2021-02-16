@@ -28,7 +28,7 @@ To install the libraries you can simply copy all files from the GroundStation fo
 **Note**: Radiolib have modifications compared to the original one, so make sure you use the version listed here or just copy the libraries from the `lib`folder to avoid problems. 
 
 ### Open the project in Arduino IDE
-Once you have cloned this project to a local directory, you can open it from the Arduino IDE in `File > Add folder` to workspace. And select the .ino file which is located in `FossaGroundStation > Fossa_GroundStation.ino`
+Once you have cloned this project to a local directory, you can open it from the Arduino IDE in `File > Add folder` to workspace. And select the .ino file which is located in `TinyGS > TinyGS.ino`
 
 ![Open on Arduino IDE](images/open_arduino.png "Open on Arduino IDE")
 
