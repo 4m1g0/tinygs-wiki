@@ -1,7 +1,8 @@
 **Getting started**
 * [Home](https://github.com/G4lile0/ESP32-OLED-Fossa-GroundStation/wiki)
-* [Web Application](https://github.com/G4lile0/tinyGS/wiki/Web-application)
 * [Quick Start](https://github.com/G4lile0/tinyGS/wiki/Quick-Start)
+* [Web Application](https://github.com/G4lile0/tinyGS/wiki/Web-application)
+* [Local dashboard](https://github.com/G4lile0/tinyGS/wiki/Local-Dashboard)
 * [Platformio (recommended)](https://github.com/G4lile0/ESP32-OLED-Fossa-GroundStation/wiki/Platformio)
 * [Arduino IDE](https://github.com/G4lile0/ESP32-OLED-Fossa-GroundStation/wiki/Arduino-IDE)
 
