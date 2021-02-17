@@ -53,7 +53,7 @@ This is the main data recovery system, but we are developing an API to access da
 You can access to your Ground Station data and configuration via local website at your
 
 <p align="center">
-<img src="/doc/images/TinyGS_dashboard.png" width="300">
+<img src="images/TinyGS_dashboard.png" width="300">
 </p>
 
 Also you can use the serial port of your board to see the basic console.
@@ -61,7 +61,7 @@ Also you can use the serial port of your board to see the basic console.
 # TinyGS network architecture
 
 <p align="center">
-<img src="/doc/images/TinyGS_architecture.png" width="300">
+<img src="images/TinyGS_architecture.png" width="300">
 </p>
 
 # OTA update and Auto Tuning
