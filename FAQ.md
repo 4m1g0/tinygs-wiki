@@ -27,7 +27,8 @@ It change depending of the hour, during the day is white and during the night is
 * **What mean a CRC error and why it doesn't appear as a received packet**
 The Cyclic Redundancy Check (CRC) verifies the integrity of the received packet. Some packets with CRC errors are expected. The LoRa demodulation can find packets out of noise. Some false positive results are expected and in some receiver configuration we may receive a lot. The CRC check is a filter for these packets, but they are not necessarily an indicator of bad hardware.
 
-
+* **Why I cannot cannot access to the MQTT server as I did before?**
+Check the [Programmatic API](https://github.com/G4lile0/tinyGS/wiki/Programmatic-API) for a more in depth explanation.
 
 
 
