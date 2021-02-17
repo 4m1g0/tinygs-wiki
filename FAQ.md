@@ -30,7 +30,6 @@ The Cyclic Redundancy Check (CRC) verifies the integrity of the received packet.
 * **Why I cannot cannot access to the MQTT server as I did before?**
 Check the [Programmatic API](https://github.com/G4lile0/tinyGS/wiki/Programmatic-API) for a more in depth explanation.
 
-* **Why my OLED Display is sometimes all white and sometimes black?**
-This is a new feature to protect the OLED hardware. All oled displays suffer wearout with time so now the station uses a light style for day hours and a dark style for the night, this ensures that all the OLED pixels wear out at the same pace making it not noticeable. Also an option to lower the OLED brightness was added to the configuration dashboard.
+
 
 
