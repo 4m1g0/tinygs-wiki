@@ -2,7 +2,7 @@ The API is designed to control the your station from a script running on your co
 
 We are still testing this feature and it will be released in the next weeks.
 
-## * **Why I cannot cannot access to the MQTT server as I did before?**
+## **Why I cannot cannot access to the MQTT server like I did before?**
 The access to the mqtt server like we did previously was a really bad hack. It's essentially a man in the middle in the server-station protocol. In the new version, the server has way more awareness of the station status in order to be able, for example, of continuously change the parameters of the stations with "AutoTune" enabled to receive the most probable satellite based on TLEs and also to show all the station information on the web application in real time.
 
 These new features open a lot of very interesting posibilites, but the server needs to be always in sync with the info in the stations. If there is other mqtt clients injecting traffic on the same channel that the server uses to communicate to the stations it all becomes chaotic. 
