@@ -38,7 +38,7 @@ If you login into the local web config dashboard you will see one parameter call
 
 The modem config string has the following form:
 
-** LoRa **
+**LoRa**
  * **mode:** The radio mode `LoRa` or `FSK`
  * **freq:** Frequency
  * **bw:** Bandwith
@@ -56,11 +56,12 @@ The modem config string has the following form:
  * **reg:** Custom register specification. This option allows to directly write on the registers of the radio module you can find more information about how to use it below.
 
 Example:
-´´´
-{"mode":"LoRa","freq":436.703,"bw":250.0,"sf":10,"cr":5,"sw":18,"pwr":5,"cl":120,"pl":8,"gain":0,"crc":true,"fldro":1,"sat":"Norbi","NORAD":46494}
-´´´
 
-** FSK **
+```
+{"mode":"LoRa","freq":436.703,"bw":250.0,"sf":10,"cr":5,"sw":18,"pwr":5,"cl":120,"pl":8,"gain":0,"crc":true,"fldro":1,"sat":"Norbi","NORAD":46494}
+```
+
+**FSK**
  * **mode:** The radio mode `LoRa` or `FSK` 
  * **freq:** Frequency
  * **bw:** Bandwith
@@ -74,9 +75,9 @@ Example:
  * **NORAD:** The norad number of the satellite transmitter
  * **reg:** Custom register specification. This option allows to directly write on the registers of the radio module you can find more information about how to use it below.
 
-´´´
+```
 {"mode":"FSK","freq":437.77,"br":9.6,"fd":25,"bw":200,"pwr":10,"cl":100,"pl":0,"ook":0,"fsw":[4,53,46,53,46],"sat":"reaktor-hello-world","NORAD":43743}
-´´´
+```
 #### Register specification
 Some satellites, especially in FSK will require to directly change the registers of the radio module to specific bytes. Be aware that this is an advanced feature and an incorrect configuration might even damage your device.
 A register modification has the following form: `[9984, 328970]` those two 32 bit int values encode 4 8bit values: reg, value, msb, lsb and checkInterval, so that the previous command will be equivalent to reg: 39, value: 0, msb: 5, lsb: 5, checkInterval: 10
