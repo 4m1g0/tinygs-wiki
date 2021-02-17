@@ -3,15 +3,15 @@ This quick guide show you how to easily upload the code to your board module usi
 ## Upload the firmware
 First go to the [release page](https://github.com/G4lile0/tinyGS/releases) and download the TinyGS Uploader 
 
-![](images/download_uploader.png)
+![Download uploader](images/download_uploader.png)
 
 Once it is downloaded, execute it. On linux you might have to execute it from a terminal window and on Windows or Mac you might get an warning message like the following one. You have to click on _more options_ and _run anyway_.
 
-![](images/windows_alert.jpg)
+![Windows alert](images/windows_alert.jpg)
 
 Once it is running the only thing you have to do is connect your board to the computer via USB and click refresh. Make sure the right port is selected and click _Upload TinyGS firmware_.
 
-![](images/TinyGS uploader.png)
+![TinyGS uploader running](images/TinyGS_uploader.png)
 
 Once the process finished the board will restart and start the booting process. It might take around 40 seconds to show something on the screen the first time it boots.
 
