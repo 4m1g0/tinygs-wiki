@@ -21,7 +21,7 @@ The parameters that must be filled are the following:
 * **Automatic tunning:** (Experimental) If this option is activated, the system will try to get the prediction from the satellites and set the radio parameters automatically to maximize the options of receiving a satellite.
 * **Telemetry to third party:** Some of the satellite operatos, usually universities, have asked us to send the data received by the network so they have more data to study. If you disable this option, no data will be sent to third parties.
 * **Test Mode:** This option sets your station in test mode. All the packets will be marked as test. Use this option if you are making tests for example retransmitting old packets so that the data does not count as actual data.
-* **Test Mode:** This option enables or disables automatic firmware updates. We recommend to leave it always enabled so your board receives always the lastest updates.
+* **Automatic Firmware Update:** This option enables or disables automatic firmware updates. We recommend to leave it always enabled so your board receives always the lastest updates.
 * **Board template:** This field provides an easy way to configure any type of board with custom pinout. Learn more about [Board Templates here](https://github.com/G4lile0/tinyGS/wiki/Board-templates).
 * **Modem startup:** This option contains the initial radio configuration for the board, this will be changed by the server but it's useful to keep the config after rebooting and to allow ofline operation.
 * **Avanced parameters:** This option provides a set of advanced parameters mostly for developing and debugging tasks.
