@@ -1,5 +1,5 @@
 ## Build on Arduino IDE
-We strongly recommend using platformio, the build process is simpler and it is less likely to have compilation errors. https://github.com/G4lile0/ESP32-OLED-Fossa-GroundStation/wiki/Platformio
+**We do NOT recommend using Arduino IDE, we strongly recommend using Platformio**, the build process is simpler and it is less likely to have compilation errors. https://github.com/G4lile0/ESP32-OLED-Fossa-GroundStation/wiki/Platformio
 
 You can install the Arduino IDE by downloading it from [arduino.cc](https://www.arduino.cc/en/Main/Software), we recommend the last version, but you should use v1.6 or above.
 
@@ -26,6 +26,13 @@ To install the libraries you can simply copy all files from the GroundStation fo
 * **FailSafeMode** (recommended 0.2.2) https://github.com/gmag11/FailSafeMode
 
 **Note**: Radiolib have modifications compared to the original one, so make sure you use the version listed here or just copy the libraries from the `lib`folder to avoid problems. 
+
+### Make library configurations
+Arduino IDE makes it not possible to configure the libraries automatically so you have to do it on your own. For an automatic configuration we recommend using Platformio: https://github.com/G4lile0/ESP32-OLED-Fossa-GroundStation/wiki/Platformio
+ * In `/ArduinoJson/src/ArduinoJson/Configuration.hpp` set `#define ARDUINOJSON_USE_LONG_LONG 1` to 1 around line 68.
+ * In `/IotWebCong2/src/IotWebConf2Settings.h` add this line at the beggining of the file `#define IOTWEBCONF_DEBUG_DISABLED 1`
+ * In `/RadioLib/src/BuildOpt.h` uncomment `#define RADIOLIB_GODMODE` around line 367
+ * In `/PubSubClient/src/PubSubClient.h` set `#define MQTT_MAX_PACKET_SIZE 1000` to 1000
 
 ### Open the project in Arduino IDE
 Once you have cloned this project to a local directory, you can open it from the Arduino IDE in `File > Add folder` to workspace. And select the .ino file which is located in `TinyGS > TinyGS.ino`
