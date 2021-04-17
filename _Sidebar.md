@@ -12,6 +12,10 @@
 * [Board Templates](https://github.com/G4lile0/tinyGS/wiki/Board-Templates)
 * [OTA Update](https://github.com/G4lile0/ESP32-OLED-Fossa-GroundStation/wiki/OTA-Update)
 
+**Useful resources**
+* [Antennas](https://github.com/G4lile0/tinyGS/wiki/Antenna)
+
+
 **Other**
 * [FAQ](https://github.com/G4lile0/ESP32-OLED-Fossa-GroundStation/wiki/FAQ)
 * [Programmatic API](https://github.com/G4lile0/tinyGS/wiki/Programmatic-API)
