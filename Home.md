@@ -123,6 +123,9 @@ You can contribute to TinyGS by
 
 **Other**
 * [FAQ](https://github.com/G4lile0/ESP32-OLED-Fossa-GroundStation/wiki/FAQ)
+* [Antenna](Antenna)
+* [LNA](LNA)
+* [Filter](Filter)
 * [Programmatic API](https://github.com/G4lile0/tinyGS/wiki/Programmatic-API)
 
 # Project dependencies
