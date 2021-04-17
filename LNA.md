@@ -40,3 +40,6 @@ Use Bias Tee: NO.
 Recommend: NO.
 
 Note on online shopping: similar items are sold in different sites at different prices, I can't tell if they are the same or not, most likely yes as most of them are coming from the same country anyway.
+
+### Authors of this page
+- [@Judhi](https://github.com/judhi) - 2021/04/17
