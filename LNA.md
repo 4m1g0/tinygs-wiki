@@ -3,6 +3,10 @@
 OK, you have got your first signal but it is unstable, or you want to catch signal from satellites with QRP (low transmission power) such as SDSat? Sometimes using a good antenna is not good enough, you need to use Low Noise Amplifier. 
 An amplifier is supposed to, well, amplify signal. But in reality it will amplify everything including unwanted signals a.k.a. noise. So how can you filter the signal to those that you want? What is the best configuration, filter first or LNA first? What is the gain needed? Which brand is good? And what the heck is Bias Tee? Let's take a look one by one.
 
+## How to use LNA
+
+Most people believe: [Antenna](Antenna.md) - LNA - [Filter](Filter.md) - receiver. I use: [Antenna](Antenna.md) - [Filter](Filter.md) - LNA - receiver. That's what giving better noise floor on my Software Defined Radio (SDR), some other people swear I committed sin for doing that, I don't care, it works for me. Just try both and see which one is better for you. Using Filter is a must when you are using LNA. See more about Filter [here](Filter.md).
+
 ## Which LNA is good?
 
 What is good for me not always good for everyone. Most LNAs work for both 433 and 915 MHz, but you should check before buying an LNA.
