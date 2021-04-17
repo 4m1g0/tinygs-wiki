@@ -22,3 +22,6 @@ However, you may start with the following antennas to try. Again, there is no gu
    - https://www.amazon.com/HYS-Antennas-Dual-Band-UHF-male-Motorola/dp/B08H24P613/
 
 There are many other antennas such as Yagi, Quadrifellar Helix (QFH), BiQuad (Zig Zag), Lindenblad, etc. But you may want to start with the first two above before going further.
+
+### Authors of this page
+- [@Judhi](https://github.com/judhi) - 2021/04/17
