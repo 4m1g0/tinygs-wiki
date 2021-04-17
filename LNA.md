@@ -41,5 +41,13 @@ Recommend: NO.
 
 Note on online shopping: similar items are sold in different sites at different prices, I can't tell if they are the same or not, most likely yes as most of them are coming from the same country anyway.
 
+## Important Note about Bias Tee
+
+Be careful when using some LNA with Bias Tee capability they routed DC back to the LoRa module. I assumed that the LoRa module has LC circuit that filters the working RF freq and supposedly also protects against DC current, but apparently doesn't last for long. Over few weeks my board cannot take it anymore and the LoRa chip failed. It becomes very hot and ultimately fried. If you have to use LNA with Bias Tee capabilty please make sure you use DC blocker such as [this one](https://www.amazon.com/Nooelec-SMA-DC-Block-50kHz-8GHz/dp/B07YYLHJKS/) to protect your LoRa board: 
+
+There are many other LNAs that I have not tried, but some friends are recommending. Such as [LNA for all](https://lna4all.blogspot.com/) and the premium [Cubesat filtered amp products from Uputronics](https://store.uputronics.com/index.php?route=product/product&path=59&product_id=124).
+
+Again, whichever product you choose, it might or might not work for you as there are many other factors that affecting our success in receiving satellite signals.
+
 ### Authors of this page
 - [@Judhi](https://github.com/judhi) - 2021/04/17
