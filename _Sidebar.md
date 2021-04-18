@@ -14,6 +14,7 @@
 
 **Useful resources**
 * [Antennas](https://github.com/G4lile0/tinyGS/wiki/Antenna)
+* [Filters](https://github.com/G4lile0/tinyGS/wiki/Filter)
 
 
 **Other**
