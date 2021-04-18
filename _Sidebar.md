@@ -13,8 +13,9 @@
 * [OTA Update](https://github.com/G4lile0/ESP32-OLED-Fossa-GroundStation/wiki/OTA-Update)
 
 **Useful resources**
-* [Antennas](https://github.com/G4lile0/tinyGS/wiki/Antenna)
-* [Filters](https://github.com/G4lile0/tinyGS/wiki/Filter)
+* [Antennas](Antenna)
+* [LNAs](LNA)
+* [Filters](Filter)
 
 
 **Other**
