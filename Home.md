@@ -121,11 +121,13 @@ You can contribute to TinyGS by
 * [Board Templates](https://github.com/G4lile0/tinyGS/wiki/Board-Templates)
 * [OTA Update](https://github.com/G4lile0/ESP32-OLED-Fossa-GroundStation/wiki/OTA-Update)
 
+**Useful resources**
+* [Antennas](Antenna)
+* [LNAs](LNA)
+* [Filters](Filter) 
+
 **Other**
 * [FAQ](https://github.com/G4lile0/ESP32-OLED-Fossa-GroundStation/wiki/FAQ)
-* [Antenna](Antenna)
-* [LNA](LNA)
-* [Filter](Filter) 
 * [Programmatic API](https://github.com/G4lile0/tinyGS/wiki/Programmatic-API)
 
 # Project dependencies
