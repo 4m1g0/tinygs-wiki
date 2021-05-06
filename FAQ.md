@@ -2,9 +2,9 @@
 The user is always `admin` and the password is the password you configured during the setup process on the config panel itself. Read more on the [Ground Station configuraton page](https://github.com/G4lile0/tinyGS/wiki/Ground-Station-configuration).
 
 * **I don't remember the password of the config panel!!**
- Don't worry, you can reset to default parameters though one of four methods: 
-    1) Connect to the serial por of the board using your favourite serial monitor (Platformio, Ardino, Putty...) 115200 baud and send a character 'e'. This will reset your board to default parameters. 
-    2) If your board has a user button (the other but the reset one) push and hold it for 5 seconds during booting and the board will reset to default. 
+ Don't worry, you can recover your password with one of these methods:
+    1) At any time press the _PROG_BUTTON_ of your board or connect the _PROG_BUTTON pin_ to GND for 8 seconds to enter _Rescue Mode_. In rescue mode your ground station will generate an AP with the name of your station without password and you will be able to use that AP to change the config, including your passwords. The PROG_BUTTON pin depends on the board you are using and it is defined by the [board template](https://github.com/G4lile0/tinyGS/wiki/Ground-Station-configuration).
+    2) Connect to the serial port of the board using your favourite serial monitor (Platformio, Ardino, Putty...) 115200 baud and send a character 'e'. This will reset your board to default parameters.  
     4) Using Platform.io erase the ESP32 flash memory with: `pio run --target erase`
 
 After this you will need to connect to the tinyGS config AP and set all the parameters. Read more on the [Ground Station configuration page](https://github.com/G4lile0/tinyGS/wiki/Ground-Station-configuration).
