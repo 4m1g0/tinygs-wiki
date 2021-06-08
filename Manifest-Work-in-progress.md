@@ -4,7 +4,7 @@ TinyGS was originally created as a weekend project to listen to the FossaSAT-1 L
 * **Non profit.** The developers of TinyGS do this exclusively in our free time. Our respective companies have no relation to TinyGS. We do not accept any payment for our work on TinyGS.
 * **Open.** All the data received by your station is available on your station console on TinyGS.com. The source code for the firmware, the website and the backend decoders is available on GitHub.
 * **Neutrality.** The developers of TinyGS have no relation with any satellite operator and we want to remain independent. 
-* **Fairness.** Every station operator in the community has exclusive control over his station and has the right to know what communications are being held through their station.
+* **Fairness.** Every station operator in the community has exclusive control over their station and has the right to know what communications are being held through their station.
 
 # A few definitions
 TinyGS receive 3 different type of packets: 
