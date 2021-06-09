@@ -1,15 +1,25 @@
 The API is designed to control the your station from a script running on your computer. You can control all the parameters of your station and even get data from the API.
 
-We are still testing this feature and it will be released in the next weeks.
+> :warning: We are still developing and testing this feature so the definitions are subject to changes. Please comply with the restrictions of each endpoint while we are improving the services.
 
-## **Why I cannot cannot access to the MQTT server like I did before?**
-The access to the mqtt server like we did previously was a really bad hack. It's essentially a man in the middle in the server-station protocol. In the new version, the server has way more awareness of the station status in order to be able, for example, of continuously change the parameters of the stations with "AutoTune" enabled to receive the most probable satellite based on TLEs and also to show all the station information on the web application in real time.
+## Authentication
+All the API endpoints share the same authentication through a Bearer Token that can be provided by the telegram bot using the command: ` - `
 
-These new features open a lot of very interesting posibilites, but the server needs to be always in sync with the info in the stations. If there is other mqtt clients injecting traffic on the same channel that the server uses to communicate to the stations it all becomes chaotic. 
+Although public endpoints will answer wothout athentication, the number of allowed querys is higher for authenticated users, so we recomend using always authentication.
 
-**What is the alternative?**
+## Endpoitns
 
-First, provide an user friendly interface to visualize all the parameters of the station in real time (including junk packets, errors, etc.). The web panel: https://tinygs.com/stations This panel also allow editing all the possible parameters of the station when you are logged in on the panel.
+Each endpoint gives access to a different resource of the TinyGS system. Along with each endpoint url we provide the allowed methods. The base url for the API is ` --`.
 
-Second, provide a proper programmatic API so that it is possible for anyone to make an script to get the data and interact with the system. This API runs against the server and makes it aware of the changes so it can take them into account. For example if the the frequency of a sation is changed, it knows it and adjusts accordingly.
+### Station tx
+**Url:** ` -- `
+
+**Methods:** POST
+
+**Responses:** 
+
+ - 200 Transmission OK.
+ - 428 tx disabled by config.
+
+**Description:** Commands your station to transmit the given frame. The allow tx flag must be enabled on the firmware or the transmission will be prevented by hardware. The payload must be given in base64 format.
 
