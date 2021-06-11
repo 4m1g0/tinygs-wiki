@@ -17,13 +17,13 @@ the "TinyGS Personal Bot" (It usually sends a welcome message to new members). S
 MQTT credentials.  
 
 * **I'm new and I want to get in, what hardware should I buy?**
-Fist choose the satellites that you want to receive. We recommend 433Mhz since there are more satellites. Also, some satellites like V-R3x only work in 915Mhz band and we expect more in the future. However, recently all 915 satellites become inactive, so it's unlily to receive them in the near future.
+First choose the satellites that you want to receive. We recommend 433Mhz since there are more satellites. Also, some satellites like V-R3x only work in 915Mhz band and we expect more in the future. However, recently all 915 satellites become inactive, so it's unlily to receive them in the near future.
 
 * **I have a LoRa Board with frequency 433, 868 or 915 MHz can I use it in a different band?**
 Other frequencies wont make the firmware fail but you will probably not be able to receive anything from the satellite, due the matching RF circuits.
 
-* **What type of anntenna should I use for TinyGS**
-LoRa is an awesome technology and can receive signals under the noise floor. The standard duck or coil antennas that usually come with Heltec or TTGO boards were proven to receive some packets form quite long distances. However, the conditions have to be good to be able to receive with such antennas. In order to have a more reliable groundStation we recommend to build a better tiny antenna. You can read more about the different options on the [Antennas page from @judhi](https://github.com/G4lile0/tinyGS/wiki/Antennas).
+* **What type of antenna should I use for TinyGS**
+LoRa is an awesome technology and can receive signals under the noise floor. The standard duck or coil antennas that usually come with Heltec or TTGO boards were proven to receive some packets from quite long distances. However, the conditions have to be good to be able to receive with such antennas. In order to have a more reliable groundStation we recommend to build a better tiny antenna. You can read more about the different options on the [Antennas page from @judhi](https://github.com/G4lile0/tinyGS/wiki/Antennas).
 
 * **I receive a lot of packets that appear as "Unknown" on the tinygs.com website**
 Some satellites transmit on frequencies that are used for other things on earth. Some even use standard LoRa frequiencies so it's normal that not everything that your station receive is from a satellite. Our system is capable of detecting the structure of the packets from the supported satellites, so if a frame is marked as "Unknown" it's probably a terrestrial LoRa packet or interferences from other technologies.
